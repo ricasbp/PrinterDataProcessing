@@ -1,7 +1,5 @@
 import pandas as pd
 
-#
-
 # Get the file names from the user
 file1_name = input("Enter the file name for the first CSV file. The Last Month. (e.g., 1.csv): ")
 file2_name = input("Enter the file name for the second CSV file. The Previous Month. (e.g., 2.csv): ")
