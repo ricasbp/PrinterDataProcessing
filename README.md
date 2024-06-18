@@ -8,8 +8,10 @@
 
 3. Open Visual Studio code, and open the project folder (../PrinterDataProcessing)
 
-4. Click on the .py (python) file, and run the file, by click the play button on the top right corner.
-
-5. Instal pandas with: 
+4. Instal pandas with:
 
 `pip install pandas`
+
+5. Click on the .py (python) file, and run the file, by click the play button on the top right corner.
+
+
