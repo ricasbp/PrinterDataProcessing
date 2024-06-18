@@ -2,7 +2,7 @@
 
 `https://code.visualstudio.com/download`
 
-2. Open a Command terminal and clone this repository in your PC, in the correct folder, wtih:
+2. Open a Command terminal and clone this repository in your PC, in the correct folder, with:
 
 `git clone git@github.com:ricasbp/PrinterDataProcessing.git`
 
@@ -12,6 +12,6 @@
 
 `pip install pandas`
 
-5. Click on the .py (python) file, and run the file, by click the play button on the top right corner.
+5. Click on the .py (python) file, and run the file by clicking the play button on the top right corner.
 
 
