@@ -18,10 +18,11 @@ X-Se pessoas desaparecem passado um mês, pessoa já não aparece na tabela.
 	Em teoria, programa já tem isso em conta. Pessoa que já não está na tabela do mês seguinte, não é tido em conta no programa, porque ele 
 	nao consegue fazer a diferença desse valor com o mês passado.
 
+30/06-Adicionado colunas extras.
+
 TODO:
 ----------------------------------------------------------
 Apagar valores dos casos especiais.
-Falta as outras colunas.
 
 Casos Especiais:
 ----------------------------------------------------------

@@ -13,3 +13,7 @@
 5. Instal pandas with: 
 
 'pip install pandas'
+
+5. Instal excel library with: 
+
+'pip install openpyxl'
