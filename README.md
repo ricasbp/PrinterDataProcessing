@@ -8,15 +8,13 @@
 
 3. Open Visual Studio code, and open the project folder (../PrinterDataProcessing)
 
-4. Instal pandas with:
+4. Install all these programs:
+
+`Instal python, and make sure you install PIP with admin privileges.`
 
 `pip install pandas`
 
+`pip install openpyxl`
+
 5. Click on the .py (python) file, and run the file by clicking the play button on the top right corner.
 
-
-'pip install pandas'
-
-5. Instal excel library with: 
-
-'pip install openpyxl'
