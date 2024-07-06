@@ -177,14 +177,32 @@ dfResult['PB: Diferença Só Cópias'] = df2['Contador: Total de impressões em 
 dfResult['PB: Diferença Só Impressões'] = df2['Contador: Total de impressões de cópias em preto e branco'] - df1['Contador: Total de impressões de cópias em preto e branco']
 print("\nSubtracted values to new .csv!")
 
+# Calculate the sum of each column
+sum_row = dfResult[result_columns[1:]].sum().to_frame().T
+sum_row['Nome da Conta'] = 'TOTAL'
+
+# Append the sum row to the DataFrame
+dfResult = pd.concat([dfResult, sum_row], ignore_index=True)
+
+
+# Filter out users who didn't do any copies
+dfResult = dfResult[(dfResult['C: Diferença Total'] != 0) | 
+                    (dfResult['C: Diferença Só Cópias'] != 0) | 
+                    (dfResult['C: Diferença Só Impressões'] != 0) | 
+                    (dfResult['PB: Diferença Total'] != 0) | 
+                    (dfResult['PB: Diferença Só Cópias'] != 0) | 
+                    (dfResult['PB: Diferença Só Impressões'] != 0)]
+print("\nSubtracted users with 0 copies this month.")
+
+
+# Ask the user for the output file name
+output_file_name = input("Enter the desired name for the output file (e.g., result.xlsx): ")
 
 
 # TODO: CONFIRMAR SE ESTA A APAGAR EM CASOS EM QUE SÓ TEM UM 0 NUM DOS SITIOS
 
 #print(result.columns)
 
-# Ask the user for the output file name
-output_file_name = input("Enter the desired name for the output file (e.g., result.xlsx): ")
 
 # Save the modified DataFrame to an Excel file
 dfResult.to_excel(folder_path + output_file_name, index=False)
