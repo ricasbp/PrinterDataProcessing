@@ -1,4 +1,4 @@
-# How to Run (For GitHub Beginners)
+# How to Run (For beginners to GitHub)
 
 1. Install Visual Studio Code:
 
